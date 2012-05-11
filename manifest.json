@@ -1,0 +1,22 @@
+{
+	"name": "Fix Sharepoint Scrolling",
+	"version": "0.1",
+	"homepage_url": "https://github.com/lmartinking/fix-sharepoint",
+	"description": "Fixes Microsoft Sharepoint Stupidity With Regards To Scrolling on non-IE browsers",
+
+	"content_scripts": [ {
+		"matches": [
+			"http://*/*.aspx*"
+		],
+		"js": [
+			"lib/jquery.js",
+			"lib/fix.js"
+		]
+	} ],
+
+	"icons": {
+		"128": "icon.png"
+	},
+
+	"permissions": [ "http://*" ]
+}
